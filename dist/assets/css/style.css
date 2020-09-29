@@ -627,33 +627,33 @@ ul, h1, h2, h3, h4, h5, h6, p {
 
 .footer__list:first-child::before {
     content: 'A. ';
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .footer__list:nth-child(2)::before {
     content: 'T. ';
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .footer__list:last-child::before {
     content: 'E. ';
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 @media (max-width: 667px) {
     .footer__list:first-child::before {
         content: '1. ';
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
     .footer__list:nth-child(2)::before {
         content: '2. ';
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
     .footer__list:last-child::before {
         content: '3. ';
-        margin-right: 15px;
+        margin-right: 20px;
     }
 }
 

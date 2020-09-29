@@ -1,8 +1,16 @@
 $white: #fff;
-$pink: #cf246c;
-$black: #121212;
-$gray: #fafafa;
-$gray_dark: #a1a1a1;
+$black: #000;
+$black_light: #222;
+$bg_intro: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+$bg_contact: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+$blue_text: #1F3F68;
+$blue_btn: #5A98D0;
+$blue_footer: #316099;
+
 $radius: 10px;
-$radius_sm: 10px;
-$shadow: 0 0 25px rgba(0, 0, 0, 05);
+$shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+$shadow_card: 5px 20px 50px rgba(16, 112, 177, 0.2);
+
+
+$breakpoint_xl: 1024px;
+$breakpoint_sm: 667px;

@@ -1,0 +1,131 @@
+.project {
+    margin-top: 64px;
+
+    @media (max-width: $breakpoint_xl) {
+        margin-top: 95px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 0;
+    }
+}
+
+.project__title {
+    margin: 32px 0;
+
+    font-weight: 300;
+    font-size: 2.3rem;
+    line-height: 2.9rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @media (max-width: $breakpoint_sm) {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-align: center;
+    }
+}
+
+.project__text {
+    width: 75%;
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $black_light;
+
+    @media (max-width: $breakpoint_sm) {
+        width: 100%;
+    }
+}
+
+.project__first-img {
+    margin: 64px 0 32px 0;
+    position: relative;
+
+    line-height: 0;
+
+    @media (max-width: $breakpoint_sm) {
+        margin: 82px 0 16px 0;
+    }
+}
+
+.project__items {
+    position: relative;
+    flex-grow: 1;
+
+    @media (max-width: $breakpoint_sm) {
+        display: flex;
+    }
+}
+
+.project__img {
+    width: 100%;
+
+}
+
+.project__items-m {
+    margin-right: 32px;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+.project__parent {
+    display: flex;
+    justify-items: center;
+
+    @media (max-width: $breakpoint_sm) {
+        flex-direction: column;
+    }
+}
+
+.img__text {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    z-index: 1000;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: $white;
+
+    @media (max-width: $breakpoint_sm) {
+        top: 16px;
+        right: 16px;
+
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+.img__text-mini {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 1000;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.05em;
+    color: $white;
+
+    @media (max-width: $breakpoint_sm) {
+        top: 26px;
+        right: 16px;
+
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}

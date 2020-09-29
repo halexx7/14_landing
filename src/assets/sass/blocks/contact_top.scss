@@ -1,0 +1,42 @@
+.contact__top {
+    height: 250px;
+
+    background: $bg_contact;
+}
+
+.contact__top-line {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    background: url(../img/line_top.svg) no-repeat center center;
+}
+
+.contact__top--center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__title {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 4.6rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $white;
+}
+
+.contact__text {
+    max-width: 780px;
+
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}

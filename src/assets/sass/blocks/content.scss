@@ -1,0 +1,100 @@
+.content__card-box {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint_xl) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.content__title {
+    margin: 64px 0;
+
+    font-weight: 300;
+    font-size: 2.3rem;
+    line-height: 2.9rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @media (max-width: $breakpoint_sm) {
+        margin: 48px 0 32px 0;
+
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+
+.content__inner {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    padding: 44px 32px;
+
+    background: $white;
+    box-shadow: $shadow_card;
+    border-radius: $radius;
+
+    @media (max-width: $breakpoint_xl) {
+        margin-bottom: 32px;
+        padding: 44px 28px 28px 28px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        width: 100%;
+    }
+
+}
+
+.card__img {
+    margin-bottom: 52px;
+    align-self: center;
+}
+
+.card__img-2 {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__img-2-1 {
+    position: absolute;
+    z-index: 2;
+}
+
+.card__img-2-2 {
+    position: relative;
+    top: -40px;
+    z-index: 1;
+}
+
+.card__title {
+    margin-bottom: 15px;
+
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    font-weight: normal;
+    color: $blue_text;
+}
+
+.card__text {
+    margin-bottom: 28px;
+
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.05em;
+    color: $blue_text;
+    opacity: 0.6;
+}
+
+.card__link {
+    font-size: 0.87rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.05em;
+    color: $blue_btn;
+    text-decoration: none;
+}

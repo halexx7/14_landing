@@ -3,19 +3,38 @@
 
 /* Default styles */
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
+    padding: 0;
 
-    background-color: $gray;
-
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $black;
     font-size: 1rem;
     line-height: 1.5;
 }
+
+ul, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint_xl) {
+        padding: 0 32px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 0 16px;
+    }
+}
+
+
 
 *,
 *:before,
@@ -25,11 +44,19 @@ body {
 
 
 /* Bootstrap */
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
-@import "../../../node_modules/bootstrap/scss/grid";
+//@import "../../../node_modules/bootstrap/scss/functions";
+//@import "../../../node_modules/bootstrap/scss/variables";
+//@import "../../../node_modules/bootstrap/scss/mixins";
+//@import "../../../node_modules/bootstrap/scss/grid";
 
 
 /* Blocks */
 @import "blocks/header";
+@import "blocks/intro";
+@import "blocks/content";
+@import "blocks/project";
+@import "blocks/footer";
+@import "blocks/contact_top";
+@import "blocks/contact_data";
+@import "blocks/contact_form";
+@import "blocks/map";

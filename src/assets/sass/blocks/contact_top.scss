@@ -28,6 +28,14 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $white;
+
+    @media (max-width: $breakpoint_sm) {
+        margin-bottom: 32px;
+
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
 }
 
 .contact__text {
@@ -39,4 +47,11 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
+
+    @media (max-width: $breakpoint_xl) {
+        max-width: 520px;
+
+        font-size: 1rem;
+        line-height: 1.87rem;
+    }
 }

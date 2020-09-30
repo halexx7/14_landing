@@ -1,5 +1,13 @@
 .contact__content {
     margin-top: 135px;
+
+    @media (max-width: $breakpoint_xl) {
+        margin-top: 64px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 46px;
+    }
 }
 
 .contact__box {
@@ -10,6 +18,16 @@
 
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $breakpoint_xl) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    @media (max-width: $breakpoint_xl) {
+        margin-bottom: 32px;
+    }
 }
 
 .contact__data {
@@ -109,6 +127,11 @@
     background: $white;
     box-shadow: $shadow_card;
     border-radius: $radius;
+
+    @media (max-width: $breakpoint_sm) {
+        width: 100%;
+        padding: 36px;
+    }
 }
 
 .form__title {
@@ -124,6 +147,15 @@
     position: absolute;
     right: 0;
     top: -78px;
+
+    @media (max-width: $breakpoint_xl) {
+        position: static;
+        margin-top: 64px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-top: 32px;
+    }
 }
 
 .contact__form--min {
@@ -142,6 +174,10 @@
         letter-spacing: 0.04em;
         color: $blue_text;
         opacity: 0.2;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        width: 100%;
     }
 }
 
@@ -162,6 +198,12 @@
         color: $blue_text;
         opacity: 0.2;
     }
+
+    @media (max-width: $breakpoint_sm) {
+        height: 90px;
+
+        width: 100%;
+    }
 }
 
 .contact__name {
@@ -178,6 +220,7 @@
         opacity: 0.8;
     }
 }
+
 
 .contact__email{
     margin-top: 32px;
@@ -208,6 +251,10 @@
         color: $blue_text;
         opacity: 0.8;
     }
+
+    @media (max-width: $breakpoint_sm) {
+        margin-bottom: 46px;
+    }
 }
 
 .btn__contact {
@@ -225,12 +272,31 @@
     letter-spacing: 0.04em;
     color: $white;
     text-decoration: none;
+    text-transform: uppercase;
+
+    @media (max-width: $breakpoint_sm) {
+        padding: 15px 50px;
+    }
+}
+
+.contact__map {
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .map {
-    width: 940px;
+    width: 100%;
     height: 480px;
     border: none;
+
+    @media (max-width: $breakpoint_xl) {
+        width: 100%;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+        height: 349px;
+    }
+
 }
 
 
